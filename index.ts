@@ -50,12 +50,8 @@ const server = new McpServer({
 });
 
 // ---------------------------------------------------------------------------
-// Helper: build model list string for descriptions
+// Helper: format model info
 // ---------------------------------------------------------------------------
-
-function modelListMarkdown(models: ModelDefinition[]): string {
-  return models.map((m) => `- \`${m.id}\` — ${m.name}: ${m.description}`).join("\n");
-}
 
 function formatModelInfo(model: ModelDefinition): string {
   const lines = [

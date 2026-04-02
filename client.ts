@@ -73,10 +73,6 @@ export class KieAiClient {
     this.config = config;
   }
 
-  // -------------------------------------------------------------------------
-  // Public API
-  // -------------------------------------------------------------------------
-
   /**
    * Create a generation / editing task for any model.
    */
