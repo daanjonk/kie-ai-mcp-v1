@@ -40,32 +40,42 @@ Universal MCP server for **all** [Kie AI](https://kie.ai) image generation and e
 | `kie_edit_image` | Edit an existing image with natural language |
 | `kie_get_task_status` | Check task status and get result URLs |
 
-## Setup
+## Quick Start (npx — no install needed)
 
 ### 1. Get your API key
 
 Go to [kie.ai/api-key](https://kie.ai/api-key) and create an API key.
 
-### 2. Install
+### 2. Add to Claude Desktop / Claude Code
+
+Add this to your MCP settings (e.g. `claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "kie-ai": {
+      "command": "npx",
+      "args": ["-y", "kie-ai-mcp-server"],
+      "env": {
+        "KIE_AI_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}
+```
+
+That's it. `npx` downloads and runs the server automatically — no cloning, no building.
+
+### Alternative: Install from source
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/kie-ai-mcp-server.git
+git clone https://github.com/spiritbird-ai/kie-ai-mcp-server.git
 cd kie-ai-mcp-server
 npm install
 npm run build
 ```
 
-### 3. Configure
-
-Set your API key as an environment variable:
-
-```bash
-export KIE_AI_API_KEY=your_api_key_here
-```
-
-### 4. Add to Claude Desktop / Claude Code
-
-Add this to your MCP settings (e.g. `claude_desktop_config.json`):
+Then use this config instead:
 
 ```json
 {
