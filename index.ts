@@ -46,7 +46,7 @@ const client = new KieAiClient({ apiKey: API_KEY, baseUrl: BASE_URL, timeout: TI
 
 const server = new McpServer({
   name: "kie-ai-mcp-server",
-  version: "1.0.0",
+  version: "2.0.0",
 });
 
 // ---------------------------------------------------------------------------
