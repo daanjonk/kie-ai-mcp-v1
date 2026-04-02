@@ -1,0 +1,32 @@
+{
+  "name": "kie-ai-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Kie AI image generation and editing — supports all models (Nano Banana Pro, Seedream 4.5, Flux 2, Imagen 4, Ideogram V3, and more)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "kie-ai-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "kie-ai", "image-generation", "ai", "nano-banana", "seedream", "flux", "imagen"],
+  "author": "SpiritBird",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.7.9",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
