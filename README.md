@@ -2,6 +2,11 @@
 
 Universal MCP server for **all** [Kie AI](https://kie.ai) image generation and editing models. One server, every model — pick the one you want at call time.
 
+## What's New in v2.1
+
+- **Seedream 5 Lite Text-to-Image** (`seedream/5-lite-text-to-image`) — ByteDance's latest lightweight generation model with high-quality output by default.
+- **Seedream 5 Lite Image-to-Image** (`seedream/5-lite-image-to-image`) — Transform existing images with natural language. Change lighting, styles, effects, and more. Defaults to high quality output.
+
 ## Supported Models
 
 ### Generation (text-to-image / image-to-image)
@@ -11,6 +16,8 @@ Universal MCP server for **all** [Kie AI](https://kie.ai) image generation and e
 | `nano-banana-pro` | Nano Banana Pro | Best all-around. 4K, text rendering, up to 8 ref images |
 | `google/nano-banana` | Nano Banana | Fast, affordable Gemini-based generation |
 | `nano-banana-2` | Nano Banana 2 | Second-gen improvements |
+| `seedream/5-lite-text-to-image` | Seedream 5 Lite | ByteDance's latest. High quality by default |
+| `seedream/5-lite-image-to-image` | Seedream 5 Lite I2I | Transform images with natural language. High quality default |
 | `seedream/4.5-text-to-image` | Seedream 4.5 | ByteDance. Photorealistic, 2K/4K quality modes |
 | `flux-2/pro-text-to-image` | Flux 2 Pro | Photoreal detail, accurate text rendering |
 | `flux-2/pro-image-to-image` | Flux 2 Pro I2I | Style transfer, outfit changes, up to 8 refs |

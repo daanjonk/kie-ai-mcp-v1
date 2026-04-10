@@ -228,6 +228,31 @@ export const MODEL_REGISTRY: ModelDefinition[] = [
     ],
   },
   {
+    id: "seedream/5-lite-text-to-image",
+    name: "Seedream 5 Lite Text-to-Image",
+    description: "ByteDance's Seedream 5 Lite text-to-image model. Lightweight yet high-quality generation with 2K (basic) or 4K (high) output.",
+    capabilities: ["text-to-image"],
+    params: [
+      promptParam({ maxLength: 3000 }),
+      aspectRatio7(),
+      quality("high"),
+      nsfwChecker(),
+    ],
+  },
+  {
+    id: "seedream/5-lite-image-to-image",
+    name: "Seedream 5 Lite Image-to-Image",
+    description: "ByteDance's Seedream 5 Lite image-to-image model. Transform images with natural language — change lighting, styles, effects, and more.",
+    capabilities: ["image-to-image"],
+    params: [
+      promptParam({ maxLength: 3000 }),
+      imageUrls({ maxFileSize: "10MB" }),
+      aspectRatio7(),
+      quality("high"),
+      nsfwChecker(),
+    ],
+  },
+  {
     id: "seedream/4.5-edit",
     name: "Seedream 4.5 Edit",
     description: "ByteDance's Seedream 4.5 image editing model. Edit images with natural language — change materials, lighting, styles, etc.",

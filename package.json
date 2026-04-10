@@ -1,6 +1,6 @@
 {
   "name": "kie-ai-mcp-server",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "MCP server for Kie AI image generation and editing — supports all models (Nano Banana Pro, Seedream 4.5, Flux 2, Imagen 4, Ideogram V3, and more)",
   "type": "module",
   "main": "dist/index.js",
